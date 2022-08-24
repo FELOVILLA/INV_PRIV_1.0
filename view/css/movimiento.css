@@ -1,0 +1,338 @@
+/*----------------------------------------------------------------- CONTENEDOR DEL MENU -----------------------------------------------------------------*/
+.cont-menu{                                            /*Diseño del contenedor del menu*/
+    margin-top: 40px;
+}
+.btnMenu, .btnMenu:visited{                            /*Diseño de los botones link tipo boton*/
+    text-decoration: none;
+    background-color: greenyellow;
+    display: inline-block;
+    width: 245px;
+    height: 32px;
+    text-align: center;
+    padding: 16px 0px 0px 0px;
+    color: black;
+    border-radius: 15px 10px 0px 0px;
+    margin: 0px -4px 0px 0px;
+    cursor: pointer;
+}
+a, a:visited{                                          /*Diseño de los links*/
+    text-decoration: none;
+    color: black;
+}
+.btnMenu:hover{                                        /*Diseño de la reaccion de lo botones del menu*/
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+}
+.btnMenu:active{                                       /*Diseño al dar click el un boton del menu*/
+    color: white;
+}
+
+/*--------------------------------------------------------------- CONTENEDOR DE FORMULARIO ---------------------------------------------------------------*/
+
+.cont-movimiento{                                       /*Diseño del contenedor de movimientos*/
+    display: flex;
+    width: 1050px;
+    height: 630px;
+    border: 5px solid greenyellow;
+    overflow: hidden;
+    border-radius: 0px 100px 100px 100px;
+}
+.contIzq{                                               /*Diseño del contenedor izquierdo*/
+    height: 630px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.contDrc{                                               /*Diseño del contenedor derecho*/
+    height: 630px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+.cont1{                                                 /*Diseño del contenedor superior izquierdo*/                        
+    height: 50px;
+    width: 550px;
+    margin: 30px auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-barcode{                                            /*Diseño del icono de de codigo de barras*/
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0px 5px 0px 0px;
+}
+.txt-tipo-movimiento{                                   /*Diseño de la barra desplegable */
+    border-radius: 7px;
+    height: 35px;
+    border-style: none none solid;
+    border-color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    text-align: center;
+    width: 160px;
+    outline: none;
+    cursor: pointer;
+}
+.txt-tipo-movimiento:hover, .txt-tipo-movimiento:focus,
+.camp-txt-auto:hover, .camp-txt-auto:focus,
+.txt-Camp:hover, .txt-Camp:focus{                       /*Diseño de reaccion del campo de texto ID y contraseña */
+    border-style: none;
+    border-bottom: 2px solid rgb(139, 248, 50);
+    box-shadow: 2px 2px 2px 2px greenyellow;
+}
+.cont0{                                                 /*Diseño del label de codigo*/
+    margin-left: 19px;
+}
+.txt-Camp{                                              /*Diseño de los campos de interactivos*/
+    border-radius: 7px;
+    height: 29px;
+    border-style: none none solid;
+    border-color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    text-align: center;
+    width: 160px;
+    outline: none;
+}
+.camp-txt-auto{                                         /*Diseño de los campos de automaticos*/
+    border-radius: 7px;
+    height: 29px;
+    border-style: none none solid;
+    border-color: greenyellow;
+    background: transparent;
+    color: white;
+    text-align: center;
+    width: 160px;
+    outline: none;
+    margin-right: 18px;
+}
+.txt-Camp::-webkit-input-placeholder, 
+.camp-txt-auto::-webkit-input-placeholder{              /*Diseño del placeholder*/
+    color: #ddd;
+}
+.camp-titulo{                                           /*Diseño del el titulo del producto*/
+    color: black;
+    background-color: transparent;
+    height: 50px;
+    width: 291px;
+    text-align: center;
+    font-size: 25px;
+    outline: none;
+    border: none;
+}
+.label1{                                                /*Diseño del label tipo movimiento*/
+    margin: 0px 8px;
+    font-size: 12px;
+}
+.cont-Unidades{                                         /*Diseño del contenedor de numero de unidades*/
+    display: flex;
+    height: 50px;
+    width: 550px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.label2{                                                /*Diseño del label numero de unidades*/
+    width: 254px;
+    margin: 20px auto ;
+}
+.text-label{                                            /*Diseño del label nombre*/
+    display: inline-block;
+    width: 95px;
+    height: 20px;
+    text-align: center;
+    color: #ddd;
+}
+.conForm{                                               /*Diseño del contenedor del formulario*/
+    height: 330px;
+    width: 625px;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 18px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+div.conForm > div{                                      /*Diseño de los contenedores hijos del contenedor del formulario*/
+    width: 570px;
+    margin: auto;
+    height: 50px;
+    padding-top: 15px;
+}
+.cont-imagen{                                           /*Diseño del contenedor de la imagen*/
+    height: 330px;
+    width: 310px;
+    margin: 10px auto 0px;
+}
+.imagen{                                                /*Diseño del espacio de la imagen*/
+    background-color: rgba(0, 0, 0, 0.404);
+    height: 330px;
+    width: 310px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+img{                                                    /*Condiciones de las imagenes */
+    width: 100%;
+    height: 100%;
+}
+.contFecha{                                             /*Diseño del contenedor de la hora*/
+    width: 310px;
+    height: 50px;
+    margin: 30px auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt-time{                                              /*Diseño de el reloj*/
+    width: 150px;
+    border-radius: 10px;
+    height: 30px;
+    padding: 0px 10px;
+    outline: none;
+}
+.cont-titulo-imagen{                                    /*Diseño del titulo del producto*/
+    height: 50px;
+    width: 310px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{                                                /*Diseño del titulo*/
+    text-align: center;
+    margin-top: 31px;
+}
+.contBotones{                                           /*Diseño del contenedor de los  botones*/
+    height: 90px;
+    max-width: 550px;
+    margin: 0px auto 0px;
+    display: flex;
+    align-items: center;
+}
+.boton1{                                                /*Diseño del boton*/
+    display: block;
+    margin: 0px 0px 0px 182px;
+    cursor: pointer;
+    display: none;
+}
+.boton2{                                                /*Diseño del boton*/
+    display: block;
+    margin: 0px 0px 0px 12px;
+    cursor: pointer;
+    display: none;
+}
+.contBtn{                                               /*Diseño del contenedor del boton izquierdo*/
+    width: 265px;
+    height: 50px;
+    display: inline-block;
+}
+.fa-circle-plus{                                        /*Diseño del icono de añadir*/
+    font-size: 30px;
+    cursor: pointer;
+    margin: 2px 210px;
+}
+.fa-circle-chevron-right{                               /*Diseño del icono de validar*/
+    font-size: 30px;
+    cursor: pointer;
+    margin: 2px 33px;
+}
+.txt-btm{                                               /*Diseño de los label de los iconos*/
+    font-size: 12px;
+    margin: 8px 0px 10px -15px;
+}
+.fa-circle-plus:hover, .fa-circle-chevron-right:hover{  /*Diseño de la reaccion de los iconos*/
+    font-size: 36px;
+    color: greenyellow;
+}
+.fa-circle-plus:active, .fa-circle-chevron-right:active{/*Diseño al dar click en los iconos*/
+    font-size: 36px;
+    color: aqua;
+}
+.txt-btm:hover{                                         /*Diseño de la reaccion de los botones*/
+    font-size: 16px;
+    color: greenyellow;
+}
+
+/*--------------------------------------------------------------- CONTENEDOR DE VALIDAR -------------------------------------------------------------------------*/
+.cont-info-mov{                                         /*Diseño del contenedor de la validacion*/
+    width: 1050px;
+    padding: 20px 34px;
+}
+.txtinfo{                                               /*Diseño de los input de la validacion*/
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+#cont-validar{                                          /*Diseño del contenedor de la validacion*/
+    position: relative;
+    width: 1050px;
+    height: 630px;
+    border: 5px solid greenyellow;
+    overflow: hidden;
+    display: none;
+}
+.tabla{                                                 /*Diseño de la tabla*/
+    margin-bottom: 20px;
+    display: block;
+    margin: 0px auto 15px auto;
+    width: 1035px;
+    height: 450px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow:auto;         /*sirve para crear un scroll*/
+    border-radius: 7px;
+    box-shadow: 0px 1px 10px 0px rgba(47, 51, 44, 0.432);
+}
+.tabla::-webkit-scrollbar{                              /*Diseño del campo del scroll*/
+    background-color: rgb(0, 0, 0);
+    width: 12px;
+    border-radius: 7px;
+}
+.tabla::-webkit-scrollbar-thumb{                        /*Diseño del scroll*/
+    background-color: rgb(206, 205, 205);
+    border-radius: 7px;
+}
+.tabla::-webkit-scrollbar-thumb:hover{                  /*Reaccion del scroll*/
+    background-color: rgb(139, 248, 50);
+}
+th{                                                     /*Diseño de los titulos de la tala*/
+    background-color: yellowgreen;
+    position: static;
+}
+tr:nth-child(even){                                     /*Diseño a las filas pares*/
+    background-color: rgba(104, 104, 119, 0.4);
+}
+tr:nth-child(odd){                                      /*Aplica color a las filas impares*/
+    background-color: rgba(139, 248, 50, 0.4);
+}
+tr:hover{                                               /*Reaccion de los 2 tipos de filas de las tablas*/
+    background-color: rgba(63, 60, 60, 0.61);
+    cursor: pointer;
+}
+.contBtnEnviar{                                         /*Diseño del contenedor de el boton enviar*/
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.btnEnviar{                                             /*Diseño de el boton enviar*/
+    display: block;
+    height: 40px;
+    width: 160px;
+    border-radius: 15px;
+    background-color: greenyellow;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0px 15px;
+}
+.btnEnviar:hover{                                       /*Diseño de la reaccion del boton enviar*/
+    height: 45px;
+    width: 165px;
+    border-color: greenyellow;
+    font-size: 24px;
+}

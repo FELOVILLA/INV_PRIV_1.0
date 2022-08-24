@@ -1,0 +1,223 @@
+.titulo1{                                /*Diseño del titulo*/
+    width: 100%;
+    text-align: center;
+}
+
+/*---------------------------------------------- MENU -------------------------------------------------*/
+
+.menu1{                                  /*Espacio del menu*/
+    height: 37px;
+    width: 1100px;
+    margin: 1px auto; 
+}
+.botonMenu, .botonMenu:visited{          /*Diseño de los botones*/
+    background-color: rgb(139, 248, 50);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 0px 4px 0px 0px; 
+    padding: 10px 44px 10px 44px;
+    border-radius: 10px 10px 0px 0px;
+}
+.botonMenu:hover{                        /*Diseño de la Reaccion de los botones*/
+    background-color: rgba(91, 88, 95, 0.644);
+}
+.botonMenu:active{                       /*Diseño al interactuar con los botones*/
+    background-color: rgba(95, 88, 88, 0.589);
+    color: rgb(255, 255, 255);
+}
+
+/*---------------------------------------- FORMULARIO CONTAINER 1---------------------------------------*/
+
+.formulario1{                            /*Diseño del area de la interfaz*/
+    height: 550px;
+    width: 1100px;
+    margin: 1px auto;
+    border-radius: 0px 40px 1cm 1cm;
+    background-color: rgba(95, 88, 88, 0.644);
+    border-style: solid black;
+    position: relative;
+}
+.container1{                             /*Diseño del contenedor derecho*/
+    height: 550px;
+    width: 715px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.campo{                                  /*Diseño de el primer div de los input*/
+    margin: 15px 30px 0px;
+    display: flex;
+}
+.campoTexto{                             /*Diseño del campo de texto nombre producto*/
+    width: 210px;
+    height: 28px;
+    margin: 30px 7px 30px 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+}
+.campoCodigo{                            /*Diseño del campo de texto codigo producto*/
+    width: 210px;
+    height: 28px;
+    margin: 30px 0px 30px 9px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+}
+.campoTexto1{                            /*Diseño del campo de texto cantidad producto*/
+    width: 210px;
+    height: 30px;
+    margin: 30px 7px 30px 7px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+}
+.codigo{                                 /*Diseño de el label codigo*/
+    margin: 0px 0px 0px 11px;
+}
+.precio{                                 /*Diseño de el label precio*/
+    margin: 0px 0px 0px 18px;
+}
+.campoTexto2{                            /*campo de numerico precio producto*/
+    width: 210px;
+    height: 30px;
+    margin: 30px 0px 30px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+}
+.campoTexto:hover,.campoTexto1:hover,
+.campoTexto2:hover,.campoTexto3:hover{   /*Diseño de la reaccion de los campos de texto*/
+    border: 1px solid rgb(114, 253, 0);
+}
+.barraDesplegable1{                      /*Diseño de barra desplegable de categoria*/
+    background-color: rgb(139, 248, 50);
+    margin: 20px 30px 20px 0px;
+    width: 218px;
+    height: 35px;
+    border-radius: 7px 7px;      
+    cursor: pointer;
+}
+.barraDesplegable2{                      /*Diseño de barra desplegable de grupo*/
+    background-color: rgb(139, 248, 50);
+    margin: 20px 0px 20px 10px;
+    width: 218px;
+    height: 35px;
+    border-radius: 7px 7px;      
+    cursor: pointer;
+}
+.barraDesplegable1:hover, 
+.barraDesplegable2:hover{                /*Diseño de reaccion de las barras desplegables*/
+    border-color:  rgb(114, 253, 0);
+}
+.descrip{                                /*Diseño del texto de descripcicon*/
+    width: 110px;
+    margin: 40px 30px 0px;
+    background-color: rgb(139, 248, 50);
+    border-radius: 0px 10px 0px 0px;
+}
+.campoTexto3{                            /*Diseño del campo de texto descripcion*/
+    width: 635px;
+    height: 130px;
+    margin-bottom: 1px;
+    pad: 5px;
+    border-radius: 0px 10px 10px 10px;
+    outline: none;
+}
+
+/*---------------------------------------- FORMULARIO CONTAINER 2---------------------------------------*/
+
+.container2{                             /*Diseño del contenedor de la parte derecha*/
+    height: 550px;
+    width: 385px;
+    right: 0px;
+    position: absolute;
+}
+.file{                                   /*Diseño de el input typo file*/
+    display: none;
+}
+.campImg{                                /*Espacio de la imagen*/
+    width: 300px;
+    height: 300px;
+    margin: 52px auto 40px;
+    border-radius: 15px;
+}
+#img-imagen{                             /*diseño de la imagen*/
+    margin: auto;
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+}
+#img-imagen:hover{                       /*diseño de reaccion de la imagen*/
+    width: 300px;
+    height: 300px;
+}
+.boton1{                                 /*Diseño del boton de guardar y editar*/
+    display: block;
+    height: 70px;
+    width: 180px;
+    margin: auto;
+    border-color:black;
+    background-color: rgb(139, 248, 50);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.boton1:hover{                           /*Diseño de la reaccion del boton de guardar y editar*/
+    border-color: rgb(139, 248, 50);
+}
+
+/*---------------------------- CONFIGURACION DE LAS VALIDACIONES -------------------------------*/
+.form-groun{
+    width: 350px;
+}
+.negacion{  
+    position: relative;
+    height: 72px;
+}
+.iconoDeError{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+
+}
+.error{
+    font-size: 15px;
+	margin-bottom: 0;
+    visibility: hidden;
+    text-align: center;
+    margin-top: 5px;
+    color: #bb2929;
+}
+.error-activo{
+    visibility: visible;
+}
+.form-groun-correcto .iconoDeError{
+    color: #1ed12d;
+    opacity: 1;
+}
+.form-groun-correcto .campT{
+    border: 3px solid #1ed12d ;
+}
+.form-groun-incorrecto .iconoDeError{
+    color: #bb2929;
+    opacity: 1;
+}
+.form-groun-incorrecto .campT{
+    border: 3px solid #bb2929 ;
+}
+.fa-check-circle:before,.fa-times-circle:before {
+    position: absolute;
+    left: -28px;
+    top: -22px;
+}
+.posicion-rol{
+    margin: 30px auto;
+}

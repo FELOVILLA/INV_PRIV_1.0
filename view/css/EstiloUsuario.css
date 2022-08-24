@@ -1,0 +1,309 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*------------------------------------------MENU DE USUARIO-------------------------------------------*/
+
+.menu-usuario{                               /*Espacio del menu*/
+    height: 37px;
+    width: 1030px;
+    margin: 30px auto 2px; 
+}
+.boton-menu-usuario, .boton-menu-usuario:visited{    /*Diseño de los botones*/
+    background-color: rgb(139, 248, 50);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 0px 4px 0px 0px; 
+    padding: 10px 44px 10px 44px;
+    border-radius: 10px 10px 0px 0px;
+}
+.boton-menu-usuario:hover{                  /*Diseño de la Reaccion de los botones*/
+    background-color: rgba(91, 88, 95, 0.644);
+}
+.boton-menu-usuario:active{                 /*Diseño al interactuar con los botones*/
+    background-color: rgba(95, 88, 88, 0.589);
+    color: rgb(255, 255, 255);
+}
+
+/*----------------------------------------------BUSCADOR----------------------------------------------*/
+
+.col-md-7, .col-md-5, .dataTables_length { /*Elementos del pluggin innecesario*/
+    display: none;
+}
+label{                                     /*Texto del buscador*/
+    margin-left: 65px;
+}
+.form-control-sm{                          /*Diseño del buscador*/
+    height: 50px;
+    width: 800px;
+    margin: 40px 20px 0px 20px;
+    padding: 0px 10px;
+    border-radius: 7px;
+    outline: none;
+    padding: 0px 20px;
+}
+.dataTables_filter{                        /*Diseño del contenedor del buscador*/
+    height: 130px;
+    width: 1060px;
+    border: solid 3px;
+    background-color: rgba(231, 222, 222, 0.329);    
+    display: block;   /*asigna el 100% de un bloque al elemento*/
+    padding: 10px 0px;
+    border-radius: 20px;
+    margin: 0px 0px 30px;
+}
+.form-control-sm:hover{                    /*Diseño de la reaccion de el buscador*/
+    border-color: rgb(114, 253, 0);
+}
+
+/*-----------------------------------------------TABLAS-----------------------------------------------*/
+
+#tabla{                                     /*Diseño de la tabla*/
+    display: block;
+    margin: 0px auto 15px auto;
+    width: 1160px;
+    height: 380px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow: auto;         /*sirve para crear un scroll*/
+    border-radius: 7px;
+    box-shadow: 0px 1px 10px 0px rgba(47, 51, 44, 0.432);
+}
+#tabla::-webkit-scrollbar{                  /*Diseño del campo del scroll*/
+    background-color: rgb(0, 0, 0);
+    width: 12px;
+    border-radius: 7px;
+}
+#tabla::-webkit-scrollbar-thumb{            /*Diseño del scroll*/
+    background-color: rgb(206, 205, 205);
+    border-radius: 7px;
+}
+#tabla::-webkit-scrollbar-thumb:hover{      /*Reaccion del scroll*/
+    background-color: rgb(139, 248, 50);
+}
+th{                                         /*Diseño de los titulos de la tala*/
+    background-color: yellowgreen;
+    height: 30px;
+    border: solid 1px;
+}
+td{                                         /*Diseño de los td*/
+    width: 115px;
+    height: 50px;
+}
+.selector{                                  /*Diseño de los selectores*/
+    width: 20px;
+    padding: 0px 5px;
+}
+tr:nth-child(even){                         /*Diseño a las filas pares*/
+    background-color: rgba(104, 104, 119, 0.4);
+}
+tr:nth-child(odd){                          /*Aplica color a las filas impares*/
+    background-color: rgba(139, 248, 50, 0.4);
+}
+tr:hover{                                   /*Reaccion de los 2 tipos de filas de las tablas*/
+    background-color: rgba(63, 60, 60, 0.61);
+    cursor: pointer;
+}
+
+/*-----------------------------------------------BOTONES-----------------------------------------------*/
+
+.conBtns{                                   /*Diseño del contenedor de los botones*/
+    width: 1021px;
+    height: 70px;
+    background-color: rgba(207, 193, 193, 0.589);
+    margin: 30px auto 0px ;
+    border-radius: 10px;
+    border: solid 3px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+.btnprdt, .btnprdt:visited{                 /*Diseño de los botones tipo link*/
+    border: solid 1px black;
+    background-color: rgb(139, 248, 50);
+    color: black;
+    width: 190px;
+    height: 27px;
+    padding: 9px 0px 0px 0px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    float: left;
+    display: block;
+}
+.btnprdt:hover, .btnprdt2:hover{            /*Diseño de la reaccion de los botones*/
+background-color: aqua;
+border-color: aqua;
+}
+.btnprdt:active, .btnprdt2:active{          /*Diseño al interactuar con los botones*/
+background-color: chartreuse;
+border-color: chartreuse;
+}
+.btnprdt2{                                  /*Diseño de los botones*/
+    border: solid 1px black;
+    background-color: rgb(139, 248, 50);
+    color: black;
+    width: 190px;
+    height: 38px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    float: left;
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*---------------------------------------CREAR Y EDITAR USUARIO---------------------------------------*/
+
+.titulo{                                   /*Diseño del titulo*/
+    width: 700px;
+    height: 30px;
+    text-align: center;
+    margin: 30px auto 0px;
+}
+.ContForm{                                 /*Diseño del contenedor del formulario*/
+    width: 700px;
+    height: 500px;
+    margin: 30px auto;
+    border-radius: 40px;
+}
+.ContUser{                                 /*Diseño del contenedor superior*/
+    background-color: rgba(0, 0, 0, 0.308);
+    height: 100px;
+    margin: 30px auto;
+    border-radius: 30px;
+    display: flex;
+}
+.ContData{                                 /*Diseño del contenedor inferior*/
+    background-color: rgba(0, 0, 0, 0.308);
+    height: 400px;
+    width: 700px;
+    border-radius: 30px;
+    display: flex;
+}
+.campT{                                    /*Diseño del campo de texto de userName*/
+    width: 180px;
+    height: 36px;
+    border-radius: 15px;
+    margin: 32px 30px 32px 0px ;
+    padding: 0px 5px;
+    border: 2px solid transparent;
+    outline: none;
+}
+.campT:hover{                              /*DIseño de la reaccion del campo de texto de userName*/
+    border: 2px solid greenyellow;
+}
+.BarraRoles{                               /*Diseño del input de los roles*/
+    width: 195px;
+    height: 40px;
+    border-radius: 15px;
+    margin: auto;
+}
+.txt{                                      /*Diseño del label Username*/
+    color: white;
+    font-size: 13px;
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 15px 0px 0px 20px;
+}
+div.ContData > div{                        /*Diseño de los div hijos de cont data*/
+    height: 100px;
+}
+.contBtn{                                  /*Diseño del contenedor de los botones*/
+    width: 700px;
+    height: 70px;
+}
+.btnGuardar{                               /*Diseño del boton de guardar*/
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 20px auto;
+    border-radius: 15px;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+.btnGuardar:hover, .btnSalir:hover{        /*Diseño de la reaccion del boton de guardar y de salir*/
+    border: 1px solid greenyellow;
+}
+.btnGuardar:active{                        /*Diseño al dar click en el boton de guardar*/
+    background-color: chartreuse;
+    border-color: chartreuse;
+}
+.btnSalir{                                 /*Diseño de boton de salir*/
+    display: block;
+    width: 110px;
+    height: 25px;
+    margin: 20px auto;
+    border-radius: 15px;
+    background-color: yellowgreen;
+    cursor: pointer;
+    border: solid 2px black;
+    text-align: center;
+    padding-top: 10px;
+}
+a{                                         /*Diseño de el link */
+    text-decoration: none;
+    color: black;
+}
+a:visited{                                 /*Diseño de el link al ser visitado*/
+    color: black;
+}
+
+/*-----------------------------------------------------CONFIGURACION DE VALIDACIONES-------------------------------------------------------*/
+
+.form-groun{
+    width: 350px;
+}
+.negacion{  
+    position: relative;
+    height: 72px;
+}
+.iconoDeError{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+
+}
+.error{
+    font-size: 15px;
+	margin-bottom: 0;
+    visibility: hidden;
+    text-align: center;
+    margin-top: 5px;
+    color: #bb2929;
+}
+.error-activo{
+    visibility: visible;
+}
+.form-groun-correcto .iconoDeError{
+    color: #1ed12d;
+    opacity: 1;
+}
+.form-groun-correcto .campT{
+    border: 3px solid #1ed12d ;
+}
+.form-groun-incorrecto .iconoDeError{
+    color: #bb2929;
+    opacity: 1;
+}
+.form-groun-incorrecto .campT{
+    border: 3px solid #bb2929 ;
+}
+.fa-check-circle:before,.fa-times-circle:before {
+    position: absolute;
+    left: -58px;
+    top: -16px;
+}
+.posicion-rol{
+    margin: 30px auto;
+}

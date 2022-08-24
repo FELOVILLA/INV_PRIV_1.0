@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{                       /* Diseño del contenedor principal*/
+    display: flex;
+    margin: auto;
+    width: 1560px;
+    height: 720px;
+}
+.contMenu{                        /* Diseño del contenedor del menu*/
+    height: 780px;
+    width: 400px;
+}
+.menu{                            /* Diseño del contenedor del menu */
+    background-color: rgba(0, 0, 0, 0.637);
+    margin: 50px 20px 50px 20px ;
+    padding-top: 10px;
+    height: 680px;
+    width: 360px;
+    border-radius: 3cm;
+    box-shadow: 10px 10px 30px #000;
+    display: block;
+}
+a{                                /* Diseño de los links */
+    text-decoration: none;
+}
+.boton{                           /* Diseño de los botones normales del menu */
+    display: block;
+    color: rgb(255, 255, 255);
+    margin: 50px auto 0px auto;
+    border:1px solid rgb(0, 0, 0);
+    padding:5px;
+    border-radius:20px;
+    text-align:center;
+    background-color: rgb(139, 248, 50);
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+}
+.boton:hover{                     /* Diseño de la reaccion de los botones normales del menu */
+    background-color: rgb(139, 248, 50);
+    border:1px solid rgb(139, 248, 50);
+    box-shadow:0px 0px 20px rgb(0, 185, 0);
+}
+.divLogo{                         /* Contenedor del logo */
+    display: block;
+    height: 780px;
+    width: 1160px;
+}
+.logo{                            /* Ajustes del logo */
+    display: block;
+    margin: 100px auto 0px auto;
+    height: 300px;
+    width: 300px;
+}
+h1{                               /* Diseño de los titulos */
+    text-align: center;
+    margin-top: -45px;
+}
+.contInfo{                        /* Diseño del contenedor de los botones tipo icono*/
+    padding: 0px 160px;
+}
+.fa-headset{                      /* Diseño del icono de soporte*/
+    display: inline-block;
+    font-size: 40px;
+    margin: 70px 0px 25px 0px ;
+    color: white;
+}
+.fa-headset > p{                  /* Diseño del texto de icono soporte*/
+    font-size: 12px;
+    margin: 7px 0px 0px -10px;
+}
+.fa-circle-question{              /* Diseño icono de ayuda */
+    display: block;
+    font-size: 40px;
+    margin: 50px 0px 25px 0px ;
+    text-align: center;
+    color: white;
+}
+.fa-circle-question > p{          /* Diseño del texto de icono ayuda*/
+    font-size: 12px;
+    margin: 7px 0px 0px 2px;
+}
+.fa-right-from-bracket{           /* Diseño boton de cerrar sesion */
+    margin: 0px 0px 0px 55px;
+    font-size: 50px;
+    display: block;
+    color: black;
+}
+.fa-right-from-bracket > p{       /* Diseño del texto de icono cerrar sesion*/
+    margin: 5px 0px 0px -47px;
+    font-size: 15px;
+}
+.contExit{                        /* Diseño del contenedor de boton de cerrar sesion*/
+    margin: 288px 0px 0px 1000px;
+    width: 160px;
+    height: 100px;
+    display: flex;
+}
+.fa-headset:hover,
+.fa-circle-question:hover,
+.fa-right-from-bracket:hover {    /* Diseño de reccion de iconos*/
+    color: greenyellow;
+}
